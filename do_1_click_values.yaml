@@ -1,10 +1,7 @@
-# Used in https://github.com/digitalocean/marketplace-kubernetes/tree/master/stacks/posthog
-cloud: "do"
-deploymentType: "DigitalOcean 1-click"
+cloud: 'do'
 ingress:
-  nginx:
+    hostname: <your-hostname>
+    nginx:
+        enabled: true
+cert-manager:
     enabled: true
-    redirectToTLS: false
-  letsencrypt: false
-web:
-  secureCookies: false
