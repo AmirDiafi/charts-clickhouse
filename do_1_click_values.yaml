@@ -1,6 +1,8 @@
-cloud: 'do'
+cloud: "do"
+image:
+  repository: amineballalou/my-posthog
+  tag: latest
 ingress:
-    hostname: <your-hostname>
     nginx:
         enabled: true
 cert-manager:
